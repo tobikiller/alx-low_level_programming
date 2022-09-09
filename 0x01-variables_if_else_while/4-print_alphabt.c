@@ -12,7 +12,7 @@ int main(void)
 
 	for (Ch = 'a'; Ch <= 'z'; Ch++)
 	{
-	if(Ch != 'e' && Ch != 'q')
+	if (Ch != 'e' && Ch != 'q')
 	{
 
 	putchar(Ch);
