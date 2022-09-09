@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	int Ch
+	int Ch;
+	int CH;
 
 	for (Ch = 'a'; Ch <= 'z'; Ch++)
 	{
@@ -16,6 +17,9 @@ int main(void)
 	putchar(Ch);
 
 	}
+	for (CH = 'A'; CH <= 'Z'; CH++)
+
+	putchar(CH);
 
 	{
 	putchar('\n');
