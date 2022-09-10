@@ -16,8 +16,8 @@ int main(void)
 
 	for (num2 = n; num2 <= 9 ; num2++)
 	{
-	putchar(num1  + '0');
-	putchar(num2  + '0');
+	putchar(num1 + '0');
+	putchar(num2 + '0');
 
 	if (num1 == 9 && num2 == 9)
 	continue;
