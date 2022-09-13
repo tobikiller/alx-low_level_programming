@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * add -  adding intergers
+ * @a: first interger
+ * @b: second interger
  * Return: Always 0.
  */
 
