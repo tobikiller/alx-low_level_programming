@@ -1,23 +1,22 @@
 #include "main.h"
 
 /**
- * _abs - prints absolute value.
- * @n: absolute value
+ * print_last_digit - prints last digit.
+ * @n: last digit
  * Return: Always 0.
  */
 
-int _abs(int n)
+int print_last_digit(int n)
 
 {
-
 	n = n % 10;
 
 	if (n < 0)
-	{
-	 	n = -10;
-		_putchar(n + '0');
-		return (n);
-	}
+
+	 n = -n;
+	_putchar(n + '0');
+	return (n);
+
 
 
 }
