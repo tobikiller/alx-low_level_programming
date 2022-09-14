@@ -2,7 +2,7 @@
 
 /**
 * main - causes an infinite loop
-* don’t delete it!
+* Don’t delete it!
 * Return: 0
 */
 
@@ -17,8 +17,8 @@ int main(void)
 	while (i < 10)
 	{
 	putchar(i);
+	i++;
 	}
-
 	printf("Infinite loop avoided! \\o/\n");
 	return (0);
 }
