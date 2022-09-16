@@ -12,6 +12,7 @@ void print_triangle(int size)
 	int z;
 	int d;
 	int p;
+
 	if (size > 0)
 	{
 	d = size - 1;
