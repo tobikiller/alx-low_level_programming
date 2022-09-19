@@ -4,10 +4,10 @@
 /**
  * _strlen - length of string
  * @s: character
- * Return: length.
+ * Return: always.
  */
 
 int _strlen(char *s)
 {
-	return strlen(s);
+	return (strlen(s));
 }
