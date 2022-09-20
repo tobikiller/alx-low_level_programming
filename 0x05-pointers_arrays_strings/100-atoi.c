@@ -1,4 +1,4 @@
-#include "main.h"
+#includie "main.h"
 
 /**
  * _atoi - converts a string to an integer.
@@ -11,8 +11,10 @@ int _atoi(char *s)
 {
 	short boolean;
 	int i, minus, result;
+
 	i = minus = result = boolean = 0;
 	minus = -1;
+
 	while (s[i] != '\0')
 	{
 	if (s[i] == '-')
