@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * leet - function to change letters to words
- * @a : char variable
+ * *leet - function to change letters to words
+ * @str: string
  * Return: Always 0.
  */
 
@@ -20,6 +20,7 @@ char *leet(char *str)
 	if (str[a] == alpha[b])
 	str[a] = integer[b];
 	}
+
 	}
 	return (str);
 
