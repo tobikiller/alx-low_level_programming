@@ -8,21 +8,33 @@
 
 char *cap_string(char *str)
 {
-	int symb[14] = {' ', '\t', '\n', '.', ',', '!','?',
-	'"', '(', ')', '{', '}'};
+	int a;
 
-	int j, i;
+	for (a = 0; str[a] != '\0'; a++)
+	{
+	if (str[a] == ' '
+	|| str[a] == '\t'
+	|| str[a] == '\n'
+	|| str[a] == '.'
+	|| str[a] == ','
+	|| str[a] == '!'
+	|| str[a] == '?'
+	|| str[a] == '"'
+	|| str[a] == '('
+	|| str[a] == ')'
+	|| str[a] == '{'
+	|| str[a] == '}')
+	{
 
-	for (j = 0; str[j] != '\0'; j++)
-	{
-	if (str[0] >= 97 && str[0] <= 122)
-	{
+	a++;
+	if (str[a] >= 'A' && str[a] <= 'Z')
+	a++;
+	else if (str[a] >= 'a' && str[a] <= 'z')
+	str[a] = str[a] - 32;
+	a--;
+	}
+	else if (str[0] >= 'a' && str[0] <= 'z')
 	str[0] = str[0] - 32;
 	}
-	for (i = 0; i < 14; i++)
-	if (str[j] >= 97 && str[j] <= 122 && str[j - 1] == symb[i])
-	str[j] = str[j] - 32;
-	}
-
 	return (str);
 }
