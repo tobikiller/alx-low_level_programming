@@ -1,8 +1,6 @@
 #include "main.h"
-#include <stdbool.h>
-#include <string.h>
 /**
- * strspn - lenght of strings
+ * _strspn - lenght of strings
  * @s: strings
  * @accept: strings
  * Return: Always 0.
@@ -10,26 +8,23 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	size_t inital_length = 0;
+	int i, j;
+	int c = 0;
 
-	size_t len1 = strlen(s);
-	size_t len2 = strlen(accept);
-
-	for (size_t i = 0; i < len1; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-	bool found_match = false;
-	for (size_t j = 0; j < len2; j++)
+	if (s[i] != 32)
+	{
+
+	for (j = 0; accept[j] != '\0'; j++)
+	{
 	if (accept[j] == s[i])
-	{
-	found_match = true;
-	break;
+	c++;
 	}
-
-	if (!found_match)
-	break;
+	}
 	else
-	inital_length++;
+	return (c);
 	}
+	return (c);
 
-	return inital_length;
 }
