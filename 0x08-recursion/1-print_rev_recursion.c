@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev_recrusion - check the code
+ * _print_rev_recursion - check the code
  * @s: string
  * Return: Always 0.
  */
