@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * strdup- create duplicate of string
+ * _strdup - create duplicate of string
  * @str: pointer of string
  *
  * Return: newString.
